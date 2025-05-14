@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+header {
+  background: #2c3e50;
+  color: #fff;
+  padding: 1rem 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  padding: 4rem 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.project {
+  background: #fff;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-left: 5px solid #3498db;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #3498db;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #2c3e50;
+  color: #fff;
+}
+.profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 40%; /* makes it circular */
+  object-fit: cover;
+  margin-left: 20px;
+  border: 1px solid #fff;
+}
+
+/*Mobile*/
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  .profile-pic {
+    margin: 1rem 0 0 auto;
+  }
+
+  section {
+    padding: 2rem 1rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/*dark mode*/
+:root {
+  --bg-color: #f5f5f5;
+  --text-color: #333;
+  --primary-color: #3498db;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Dark theme class */
+.dark-mode {
+  --bg-color: #1e1e1e;
+  --text-color: #f5f5f5;
+  --primary-color: #3498db;
+}
+
+:root {
+  --bg-color: #f5f5f5;
+  --text-color: #333;
+  --card-bg: #ffffff;
+  --card-text: #000000;
+  --border-color: #3498db;
+}
+
+.dark-mode {
+  --bg-color: #1e1e1e;
+  --text-color: #f5f5f5;
+  --card-bg: #2c2c2c;
+  --card-text: #ffffff;
+  --border-color: #3498db;
+}
+.project {
+  background-color: var(--card-bg);
+  color: var(--card-text);
+  border: 2px solid var(--border-color);
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 10px;
+}
+.project h3 {
+  color: var(--text-color); /* ensures good visibility */
+}
+
+.project p {
+  color: var(--card-text);
+}
+
+#theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+#theme-toggle {
+  position: absolute;
+  top: 80px; /* pushes it down */
+  right: 20px;
+}
+
+#about p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+}
+
+body {
+  background-image: url('https://www.toptal.com/designers/subtlepatterns/patterns/symphony.png');
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+:root {
+  --bg: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+}
+
+.dark-mode {
+  --bg: linear-gradient(135deg, #1a1a1a, #333);
+}
+
+body {
+  background: var(--bg);
+}
+html {
+  scroll-behavior: smooth;
+}
